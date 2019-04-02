@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='assets/css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class='intro'>
+        Music Trivia!
+        <button onclick="start()">Start</button>
+    </div>
+    <div class='trivia'>
+        <span id='time'>30</span><br>
+        The piano was originally called:
+        <select name='q1'>
+            <option value='1'>pianoforte</option>
+            <option value='2'>harpsichord</option>
+            <option value='3'>keyharp</option>
+            <option value='4'>piano</option>
+        </select>
+        <br>
+        The word 'violin' comes from the Latin word:
+        <select name='q2'>
+            <option value='1'>vitula</option>
+            <option value='2'>viola</option>
+            <option value='3'>linui</option>
+            <option value='4'>vinum</option>
+        </select>
+        <br>
+        'Cello' is actually only a nickname. The full name is:
+        <select name='q3'>
+            <option value='1'>violoncello</option>
+            <option value='2'>violincello</option>
+            <option value='3'>cellos</option>
+            <option value='4'>cellulos</option>
+        </select>
+        <br>
+        The chromatic scale has ___ pitches:
+        <select name='q4'>
+            <option value='1'>6</option>
+            <option value='2'>8</option>
+            <option value='3'>10</option>
+            <option value='4'>12</option>
+        </select>
+        <br>
+        Beethoven eventually went:
+        <select name='q5'>
+            <option value='1'>mad</option>
+            <option value='2'>blind</option>
+            <option value='3'>anosmic</option>
+            <option value='4'>deaf</option>
+        </select>
+        <br>
+        <button onclick='end()'>Submit</button>
+
+    </div>
+    <div class='endgame'>
+        You correctly answered <span id='score'>0</span>/5.
+    </div>
+
+    <script src='assets/javascript/app.js'></script>
+
+</body>
+
+</html>
